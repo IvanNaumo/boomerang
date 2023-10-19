@@ -1,4 +1,4 @@
-// Импортируем всё необходимое.
+  // Импортируем всё необходимое.
 // Или можно не импортировать,
 // а передавать все нужные объекты прямо из run.js при инициализации new Game().
 
@@ -13,9 +13,9 @@ const View = require('./View');
 class Game {
   constructor({ trackLength }) {
     this.trackLength = trackLength;
-    this.hero = new Hero(); // Герою можно аргументом передать бумеранг.
+    this.hero = new Hero({position:0}); // Герою можно аргументом передать бумеранг.
     this.enemy = new Enemy();
-    this.view = new View();
+    this.view = new View(this);
     this.track = [];
     this.regenerateTrack();
   }
