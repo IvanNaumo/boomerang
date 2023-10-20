@@ -1,9 +1,9 @@
 // Враг.
 
 class Enemy {
-  constructor({ position }) {
+  constructor(trackLength) {
     this.generateSkin();
-    this.position = position;
+    this.position = trackLength - 1;
   }
 
   generateSkin() {
@@ -26,7 +26,7 @@ class Enemy {
 
   moveLeft() {
     // Идём влево.
-    this.position -= 1;
+    this.position -= 2;
   }
 
   die() {

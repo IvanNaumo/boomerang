@@ -4,7 +4,6 @@ const Game = require('../src/Game');
 class View {
   constructor(game) {
     this.game = game;
-    this.count = this.count;
   }
 
   render() {
@@ -14,7 +13,9 @@ class View {
     console.clear();
     console.log(this.game.track.join(''));
     console.log('\n\n');
-    console.log(`Created by "${yourTeamName}" with love`);
+    console.log(
+      `Your life: ${this.game.life.join('')}\nYour score: ${this.game.count} \nCreated by "${yourTeamName}" with love`
+    );
   }
 }
 
