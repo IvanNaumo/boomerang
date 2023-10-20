@@ -1,13 +1,14 @@
 // Сделаем отдельный класс для отображения игры в консоли.
 const Game = require('../src/Game');
 
-class View{
-  constructor(game){
+class View {
+  constructor(game) {
     this.game = game;
-    this.count = this.count
+    this.count = this.count;
   }
+
   render() {
-    const yourTeamName = 'Elbrus';
+    const yourTeamName = 'IPU';
 
     // Тут всё рисуем.
     console.clear();
