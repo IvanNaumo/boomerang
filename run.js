@@ -10,7 +10,6 @@ const game = new Game({
 // Запуск игры.
 game.play();
 // Юра. Иван. Парвиз
+
 runInteractiveConsole(game);
 module.exports = game;
-
-
